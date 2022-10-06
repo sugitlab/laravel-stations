@@ -6,9 +6,9 @@ use App\Models\Movie;
 
 class MovieController extends Controller
 {
-  public function getMovies()
+  public function movies()
   {
     $movies = Movie::all();
-    return view('getMovies', ['movies' => $movies]);
+    return view('movies', ['movies' => $movies]);
   }
 }

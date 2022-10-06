@@ -15,6 +15,10 @@
       <span>タイトル: {{ $movie->title }}</span>
       <span>画像: <img src="{{ $movie->image_url }}" maxWidth="200" height="200" /> </span>
     </li>
+    <div>
+      CreatedAt: {{$movie->created_at}}
+      UpdatedAt: {{$movie->updated}}
+    </div>
     @endforeach
   </ul>
 </body>
