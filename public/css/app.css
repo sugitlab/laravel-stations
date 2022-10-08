@@ -11,13 +11,28 @@
     margin: 10px 5px;
 }
 
-.required:after{
-    content:'*';
-    color:rgb(247, 100, 100);
+.required:after {
+    content: '*';
+    color: rgb(247, 100, 100);
 }
 
 .show-description {
     height: 70%;
     background-color: lightgray;
     padding: 1rem;
+}
+
+table {
+    background-color: #eee;
+    border-spacing: 0;
+}
+
+thead {
+    font-weight: bold;
+    background-color: #444;
+    color: #eee;
+}
+
+td {
+    padding: 8px;
 }

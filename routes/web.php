@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// [station1]
+// [station1] API
 // Route::get('/practice', function () {
 //     return response('practice');
 // });
@@ -33,9 +33,14 @@ Route::get('/', function () {
 //     return response($test);
 // });
 
-// [station2]
+// [station2] HTML Page (blade)
 Route::get('/practice', [PracticeController::class, 'sample']);
 Route::get('/practice2', [PracticeController::class, 'sample2']);
 Route::get('/practice3', [PracticeController::class, 'sample3']);
 Route::get('/getPractice', [PracticeController::class, 'getPractice']);
 Route::get('/movies', [MovieController::class, 'movies']);
+
+// [station7] admin page (blade)
+Route::prefix('admin')->group(function () {
+    Route::get('/movies', [MovieController::class, 'admin']);
+});
